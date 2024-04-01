@@ -55,6 +55,14 @@
             transition: transform 0.5s ease;
         }
 
+        .modal-sheet .modal-dialog {
+            width: 380px;
+            transition: bottom .75s ease-in-out;
+        }
+        .modal-sheet .modal-footer {
+            padding-bottom: 2rem;
+        }
+
     </style>
 </head>
 
@@ -67,7 +75,7 @@
             <ul class="nav nav-pills">
                 <li class="nav-item"><a href="#presentation" class="nav-link">Présentation</a></li>
                 <li class="nav-item"><a href="#project" class="nav-link">Projets</a></li>
-                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">Portfolio d'apprentissage</a></li>
             </ul>
         </nav>
 
@@ -78,20 +86,18 @@
         <div id="presentation" class="container col-xxl-8 px-4 py-5">
             <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
                 <div class="col-10 col-sm-8 col-lg-6">
-                    <img src="img/no_images.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="450" height="450" loading="lazy">
+                    <img src="img/aurel.png" class=" mx-lg-auto img-fluid" alt="Bootstrap Themes" loading="lazy" style="border-radius: 50px">
                 </div>
                 <div class="col-lg-6 elem">
                     <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Aurel GEORGES</h1>
                     <p class="lead">Hello ! Je suis m’appelle Aurel, je suis étudiant en 2e année de BUT Informatique à l’IUT Montpellier-Sète. J’aime développer des applications utiles et amusantes, je suis attentif et inspiré par les nouvelles technologies. A l’aise avec le travail d’équipe j’accorde beaucoup d’importance à la communication entre coéquipier. </p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                        <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Mon CV</button>
+                        <button type="button" class="btn btn-outline-secondary btn-lg px-4" data-bs-toggle="modal" data-bs-target="#modalTour">Contact</button>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <div class="divider"></div>
-        <div>
-            <canvas id="monCanvas" width="800" height="600"></canvas>
-        </div>
-
 
         <div class="divider"></div>
 
@@ -160,7 +166,7 @@
                         </div>
                     </a>
                 </div>
-                
+
                 <div class="col">
                     <a href="#">
                         <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('img/wisp_madness/card.png');">
@@ -190,21 +196,61 @@
         <div class="divider"></div>
 
         <div id="about" class="px-4 py-5 my-5 text-center">
-            <h1 class="display-5 fw-bold text-body-emphasis">About</h1>
+            <h1 class="display-5 fw-bold text-body-emphasis">Portfolio d’apprentissage</h1>
             <div class="col-lg-6 mx-auto">
-                <p class="lead mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pharetra libero eget suscipit sodales. Sed et tempor magna, non vulputate est. Nunc eu neque in mi iaculis blandit. Cras consectetur a turpis quis accumsan. Nulla nunc elit, mollis ac consequat ut, molestie eget sem. Phasellus iaculis sollicitudin diam ultricies feugiat. Fusce feugiat vehicula pellentesque.</p>
+                <p class="lead mb-4">Un moyen de faire le point sur mes compétences apprisent au BUT. Ce portfolio me permet de faire le lien avec le référentiel de compétences du BUT Informatique pour les 3 compétences qui s'arrêtent au niveau 2.</p>
             </div>
             <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Mon CV</button>
-                <button type="button" class="btn btn-outline-secondary btn-lg px-4">Contact</button>
+                <a href="portfolio_apprentissage.html">
+                    <button type="button" class="btn btn-primary btn-lg px-4 gap-3">
+                        <img alt="Flèche vers la droite" src="img/right-arrow.png" style="width: 30px; height: 30px">
+                    </button>
+                </a>
             </div>
         </div>
 
         <div class="divider"></div>
-
-
-
     </main>
+    <div class="modal fade modal-sheet p-4 py-md-5" aria-labelledby="Modal Contact" tabindex="-1" role="dialog" id="modalTour" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content rounded-4 shadow">
+                <div class="modal-body p-5">
+                    <h2 class="fw-bold mb-0">Contactez moi !</h2>
+
+                    <ul class="d-grid gap-4 my-5 list-unstyled small">
+                        <li class="d-flex gap-4">
+                            <a class="" href="https://github.com/Unmoriel" target="_blank">
+                                <img alt="logo github" src="img/github.png" width="64" height="64">
+                            </a>
+                            <div>
+                                <h5 class="mb-0">Github</h5>
+                                    Mes projets personnels
+                            </div>
+                        </li>
+                        <li class="d-flex gap-4">
+                            <a class="" href="https://www.linkedin.com/in/aurel-georges" target="_blank">
+                                <img alt="logo linkedin" src="img/linkedin.png" width="64" height="64"/>
+                            </a>
+                            <div>
+                                <h5 class="mb-0">LinkedIn</h5>
+                                    Mon parcours professionnel et mes compétences
+                            </div>
+                        </li>
+                        <li class="d-flex gap-4">
+                            <a class="" href="mailto:aurelgeorges@hotmail" target="_blank">
+                                <img alt="logo linkedin" src="img/email.png" width="64" height="64"/>
+                            </a>
+                            <div>
+                                <h5 class="mb-0">Mails</h5>
+                                    Envoyez moi un mail aurelgeorges@hotmail.fr
+                            </div>
+                        </li>
+                    </ul>
+                    <button type="button" class="btn btn-lg btn-primary w-100" data-bs-dismiss="modal">Génial !</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
         <div class="col-md-4 d-flex align-items-center">
@@ -224,7 +270,5 @@
             </li>
         </ul>
     </footer>
-
-
 </body>
 </html>
