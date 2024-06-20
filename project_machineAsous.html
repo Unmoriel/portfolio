@@ -10,7 +10,7 @@
     <title>Projet : Machine à Sous</title>
     <style>
         #main_presentation{
-            background-image: url("img/fortunae/ArrierePlan5.jpg");
+            background-image: url("public/img/fortunae/ArrierePlan5.jpg");
             background-size: cover;
             background-position: center;
         }
@@ -32,16 +32,14 @@
 </header>
 
 <main>
-
     <section id="main_presentation" class="py-5 text-center container">
         <div class="row py-lg-5">
             <div class="col-lg-6 col-md-8 mx-auto">
                 <h1 class="fw-light">Machine à Sous</h1>
                 <p class="lead text-body-secondary">Un projet académique qui prend la forme d'une machine à sous web en PHP & javascript</p>
                 <p>
-                    <a href="https://webinfo.iutmontp.univ-montp2.fr/~georgesa/base-projet/web/ControleurFrontal.php?action=afficherJeu&controleur=machineasous" target="_blank" class="btn btn-primary my-2">
-                        Voir le résultat
-                    </a>
+                    <a href="https://webinfo.iutmontp.univ-montp2.fr/~georgesa/base-projet/web/ControleurFrontal.php?action=afficherJeu&controleur=machineasous" target="_blank" class="btn btn-primary my-2">Voir le resultat</a>
+                    <a href="#" class="btn btn-secondary my-2">Voir le code</a>
                 </p>
             </div>
         </div>
@@ -51,64 +49,87 @@
 
         <div class="row">
             <div class="col-lg-4">
-                <img src="img/add.png" alt="add" style="width: 140px;  height: 140px;">
+                <img src="public/img/add.png" alt="add" style="width: 140px;  height: 140px;">
                 <h2 class="fw-normal">Architecture MVC</h2>
                 <p>La machine à sous est developpé avec une architecture MVC permettant une meilleure maintenance du code et l'ajout de fonctionnalités facilitée</p>
             </div>
             <div class="col-lg-4">
-                <img src="img/add.png" alt="add" style="width: 140px;  height: 140px;">
+                <img src="public/img/add.png" alt="add" style="width: 140px;  height: 140px;">
                 <h2 class="fw-normal">Base de donnée mysql</h2>
                 <p>La machine à sous est connecté avec une base de données MYSQL qui permet la création d'utilisateurs, un historique et l'affichage de statistiques pour les modérateurs</p>
             </div>
             <div class="col-lg-4">
-                <img src="img/add.png" alt="add" style="width: 140px;  height: 140px;">
+                <img src="public/img/add.png" alt="add" style="width: 140px;  height: 140px;">
                 <h2 class="fw-normal">Méthode AGILE</h2>
                 <p>L'ensemble du projet à était developpé avec la méthode AGILE. J'ai assuré le role de scrum master en parallèle du développement de la machine à sous</p>
             </div>
         </div>
-
-        <hr class="featurette-divider">
-        <div class="row featurette align-items-center justify-content-center">
-            <div class="col-md-7">
-                <h2 class="featurette-heading fw-normal lh-1">Contexte du projet</h2>
-                <p class="lead">
-                    Cette machine à sous est le résultat d'une SAE (Situation d'Apprentissage Evalué) de ma formation en BUT Informatique.
-                    Une SAE prend souvent la forme de projet qui permet de mettre en pratique les compétences acquises durant le semestre.
-                    Les professeurs prenaient la place des clients et nous devions développer un jeu de casino selon leurs spécifications
-                    en suivant la méthode de gestion de projet AGILE. Nous étions par groupe de six et j'ai choisi le rôle de scrum master en
-                    plus de participé activement au développement du projet. Notre équipe a choisi de développer une machine à sous sur quatre
-                    sprint de deux semaines.
-                </p>
-            </div>
-            <div class="col-md-5">
-                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="img/fortunae/machine_a_sous.png" alt="">
-            </div>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <div class="row featurette align-items-center justify-content-center">
-            <div class="col-md-7 order-md-2">
-                <h2 class="featurette-heading fw-normal lh-1">Déroulement du <span class="text-body-secondary">projet :</span></h2>
-                <p class="lead">
-                    Sur le premier sprint, nous avons fait beaucoup de rendez-vous avec les clients (les professeurs) pour
-                    bien comprendre leurs attentes et leur présenter une maquette sur Figma du projet. Puis au sprint suivant,
-                    nous avons commencé à développer la machine à sous en suivant le modèle MVC en PHP uniquement pour le
-                    moment. Ensuite, à la review du sprint 2, un des repproches des clients était que le jeu était trop statique
-                    et simple (à ce moment, on ne pouvait gagner qu'en alignant trois symboles identiques au milieu), nous avons
-                    donc décidé de recalculer les probabilités pour que l'on puisse gagner sur les deux diagonales et sur les
-                    trois lignes horizontales. Nous avons aussi intégré du javascript pour ajouter des animations de roulement.
-                    Le sprint 4 étant beaucoup plus court (une semaine), nous avons surtout corrigé des bugs et ajouté quelques
-                    animations de victoires et de défaite. J'ai personnellement participé activement à la construction de la
-                    machine à sous en php et je me suis occupé seul du javascript.
-                </p>
-            </div>
-            <div class="col-md-5 order-md-1">
-                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="img/fortunae/win_mas.png" alt="">
-            </div>
-        </div>
-
     </div>
+
+    <hr class="featurette-divider">
+
+    <div class="container">
+        <h2 class="fs-1 justify-content-center">Détails :</h2>
+        <div class="row">
+            <div class="col-lg-6 align-items-center justify-content-center">
+                <div>
+                    <h3 class="fs-2">Contexte du projet</h3>
+                    <p class="lead">
+                        Cette machine à sous est le résultat d'une SAE (Situation d'Apprentissage Evalué) de ma formation en BUT Informatique.
+                        Une SAE prend souvent la forme de projet qui permet de mettre en pratique les compétences acquises durant le semestre.
+                        Les professeurs prenaient la place des clients et nous devions développer un jeu de casino selon leurs spécifications
+                        en suivant la méthode de gestion de projet AGILE. Nous étions par groupe de six et j'ai choisi le rôle de scrum master en
+                        plus de participé activement au développement du projet. Notre équipe a choisi de développer une machine à sous sur quatre
+                        sprint de deux semaines.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-6 align-items-center justify-content-center">
+                <div>
+                    <h3 class="fs-2">Déroulement du projet :</h3>
+                    <p class="lead">
+                        Lors du premier sprint, j'ai rencontré les clients (les professeurs) pour comprendre leurs attentes
+                        et leur présenter une maquette sur Figma. Au sprint suivant, nous avons commencé à développer la machine
+                        à sous en PHP en utilisant le modèle MVC. À la review du sprint 2, les clients ont trouvé le jeu trop
+                        statique et simple. Nous avons donc ajusté les probabilités pour permettre des gains sur les diagonales
+                        et les trois lignes horizontales, et intégré du JavaScript pour ajouter des animations. Le sprint 4,
+                        plus court, a été consacré à la correction de bugs et à l'ajout d'animations de victoire et de défaite.
+                        J'ai activement contribué à la construction en PHP et me suis chargé seul du JavaScript.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="container">
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="public/img/fortunae/machine_a_sous.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="public/img/fortunae/win_mas.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+
 
 
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
@@ -120,12 +141,12 @@
         <ul class="nav col-md-4 justify-content-end list-unstyled d-flex px-4">
             <li class="ms-3">
                 <a class="text-body-secondary" href="https://www.linkedin.com/in/aurel-georges" target="_blank">
-                    <img alt="logo linkedin" src="img/linkedin.png" width="32" height="32"/>
+                    <img alt="logo linkedin" src="public/img/linkedin.png" width="32" height="32"/>
                 </a>
             </li>
             <li class="ms-3">
                 <a class="text-body-secondary" href="https://github.com/Unmoriel" target="_blank">
-                    <img alt="logo github" src="img/github.png" width="32" height="32">
+                    <img alt="logo github" src="public/img/github.png" width="32" height="32">
                 </a>
             </li>
         </ul>
