@@ -10,10 +10,26 @@
     <title>Projet : Machine à Sous</title>
     <style>
         #main_presentation{
-            background-image: url("img/fortunae/ArrierePlan5.jpg");
+            background-image: url("img/wisp_madness/theme_back.png");
             background-size: cover;
             background-position: center;
         }
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: rgba(0, 0, 0, 0.5); /* Couleur blanche avec opacité */
+            border-radius: 50%; /* Pour rendre les icônes plus visibles et arrondies */
+        }
+
+        .carousel-control-prev-icon:hover,
+        .carousel-control-next-icon:hover {
+            background-color: rgba(0, 0, 0, 1); /* Augmenter l'opacité au survol */
+        }
+        .carousel-inner {
+            border-radius: 20px;
+            width: 1300px;
+            height: 700px;
+        }
+
     </style>
 
 </head>
@@ -35,11 +51,11 @@
     <section id="main_presentation" class="py-5 text-center container">
         <div class="row py-lg-5">
             <div class="col-lg-6 col-md-8 mx-auto">
-                <h1 class="fw-light">Machine à Sous</h1>
-                <p class="lead text-body-secondary">Un projet académique qui prend la forme d'une machine à sous web en PHP & javascript</p>
+                <h1 class="fw-light">Wisp Madness</h1>
+                <p class="lead text-body-secondary">Un jeu video développé en 30h sur le thème de "Légende éthérée" au cour d'une Code Game Jam !</p>
                 <p>
-                    <a href="https://webinfo.iutmontp.univ-montp2.fr/~georgesa/base-projet/web/ControleurFrontal.php?action=afficherJeu&controleur=machineasous" target="_blank" class="btn btn-primary my-2">Voir le resultat</a>
-                    <a href="#" class="btn btn-secondary my-2">Voir le code</a>
+                    <a href="https://nolucci.itch.io/wisp-madness" target="_blank" class="btn btn-primary my-2">Voir le resultat</a>
+                    <a href="https://github.com/LokiAquila/WispMadness" target="_blank" class="btn btn-secondary my-2">Voir le github</a>
                 </p>
             </div>
         </div>
@@ -50,18 +66,18 @@
         <div class="row">
             <div class="col-lg-4">
                 <img src="img/add.png" alt="add" style="width: 140px;  height: 140px;">
-                <h2 class="fw-normal">Architecture MVC</h2>
-                <p>La machine à sous est developpé avec une architecture MVC permettant une meilleure maintenance du code et l'ajout de fonctionnalités facilitée</p>
+                <h2 class="fw-normal">Godot</h2>
+                <p>Ce jeux vidéo est developpé avec Godot en C#. J'ai activement participé au developpement des ennemis ainsi qu'à l'interaction entre le personnage et l'environnement</p>
             </div>
             <div class="col-lg-4">
                 <img src="img/add.png" alt="add" style="width: 140px;  height: 140px;">
-                <h2 class="fw-normal">Base de donnée mysql</h2>
-                <p>La machine à sous est connecté avec une base de données MYSQL qui permet la création d'utilisateurs, un historique et l'affichage de statistiques pour les modérateurs</p>
+                <h2 class="fw-normal">30 heures</h2>
+                <p>Ce projet a était developpé en 30h avec un équipe de 4 développeurs et deux graphistes en suivant le thème "Légende éthérée".</p>
             </div>
             <div class="col-lg-4">
                 <img src="img/add.png" alt="add" style="width: 140px;  height: 140px;">
-                <h2 class="fw-normal">Méthode AGILE</h2>
-                <p>L'ensemble du projet à était developpé avec la méthode AGILE. J'ai assuré le role de scrum master en parallèle du développement de la machine à sous</p>
+                <h2 class="fw-normal">Seconde Place</h2>
+                <p>Un jury composé de professionels du jeu vidéo nous ont récompensé en nous attribuant la seconde place sur une trentaine d'équipes !</p>
             </div>
         </div>
     </div>
@@ -74,12 +90,11 @@
                 <div>
                     <h3 class="fs-2">Contexte du projet</h3>
                     <p class="lead">
-                        Cette machine à sous est le résultat d'une SAE (Situation d'Apprentissage Evalué) de ma formation en BUT Informatique.
-                        Une SAE prend souvent la forme de projet qui permet de mettre en pratique les compétences acquises durant le semestre.
-                        Les professeurs prenaient la place des clients et nous devions développer un jeu de casino selon leurs spécifications
-                        en suivant la méthode de gestion de projet AGILE. Nous étions par groupe de six et j'ai choisi le rôle de scrum master en
-                        plus de participé activement au développement du projet. Notre équipe a choisi de développer une machine à sous sur quatre
-                        sprint de deux semaines.
+                        La Code Game Jam est un événement annuel orchestré par le professeur Antoine Chollet, où des équipes
+                        de jusqu'à six personnes créent un jeu vidéo en seulement 30 heures, avec un thème imposé. Lors
+                        de ma deuxième participation (voir Weather Wizardry), mon équipe et moi avons relevé le défi de
+                        cette édition dont le thème était "Légende éthérée". Nous avons choisi de tester le moteur de
+                        jeu open source Godot pour cette occasion.
                     </p>
                 </div>
             </div>
@@ -88,13 +103,12 @@
                 <div>
                     <h3 class="fs-2">Déroulement du projet :</h3>
                     <p class="lead">
-                        Lors du premier sprint, j'ai rencontré les clients (les professeurs) pour comprendre leurs attentes
-                        et leur présenter une maquette sur Figma. Au sprint suivant, nous avons commencé à développer la machine
-                        à sous en PHP en utilisant le modèle MVC. À la review du sprint 2, les clients ont trouvé le jeu trop
-                        statique et simple. Nous avons donc ajusté les probabilités pour permettre des gains sur les diagonales
-                        et les trois lignes horizontales, et intégré du JavaScript pour ajouter des animations. Le sprint 4,
-                        plus court, a été consacré à la correction de bugs et à l'ajout d'animations de victoire et de défaite.
-                        J'ai activement contribué à la construction en PHP et me suis chargé seul du JavaScript.
+                        Nous nous sommes rapidement orientés vers un jeu répétitif basé sur des vagues d'ennemis,
+                        similaire à Vampire Survivor. Pour correspondre au thème, nous avons choisi de faire incarner au
+                        joueur un feu follet dans un environnement sombre, où sa vie est représentée par la lumière qu'il
+                        produit. J'ai pris en charge les interactions entre le joueurs et les arbres, la statue permettant les améliorations,
+                        les coffres, ainsi qu'une grande partie de la conception de la carte. De plus, j'ai effectué toutes
+                        les fusions finales pour obtenir le jeu terminé.
                     </p>
                 </div>
             </div>
@@ -108,13 +122,41 @@
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="img/fortunae/machine_a_sous.png" class="d-block w-100" alt="...">
+                    <img src="img/wisp_madness/menu.png" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="img/fortunae/win_mas.png" class="d-block w-100" alt="...">
+                    <img src="img/wisp_madness/loading.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/wisp_madness/spawn.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/wisp_madness/enemis.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/wisp_madness/upgrade.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/wisp_madness/boss.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/wisp_madness/death.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/wisp_madness/deathScreen.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/wisp_madness/map.png" class="d-block w-100" alt="...">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -128,7 +170,7 @@
         </div>
     </div>
 
-
+    
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
         <div class="col-md-4 d-flex align-items-center">
             <span class="mb-3 mb-md-0 text-body-secondary px-4">© 2024 GEORGES Aurel</span>
