@@ -1,3 +1,10 @@
+
+document.addEventListener('DOMContentLoaded', function () {
+    let tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    let tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+});
 document.querySelector('html').setAttribute('data-bs-theme', 'dark');
 let dark_mode = true;
 function toogle_dark_mode() {
