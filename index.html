@@ -8,9 +8,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-    <script src="js/animejs/lib/anime.min.js"></script>
-    <script src="js/janpaepke-ScrollMagic-3ebcb17/scrollmagic/minified/ScrollMagic.min.js"></script>
     <script defer type="text/javascript" src="js/app.js"></script>
     <style>
         .divider {
@@ -54,6 +51,12 @@
             padding-bottom: 2rem;
         }
 
+        .feature-icon img {
+            height: 64px;
+            width: 64px;
+            border-radius: 20px;
+        }
+
     </style>
 </head>
 
@@ -65,23 +68,23 @@
             </div>
             <ul class="nav nav-pills">
                 <li class="nav-item"><a href="#presentation" class="nav-link">Présentation</a></li>
-                <li class="nav-item"><a href="#project" class="nav-link">Projets</a>
-                <li class="nav-item"><a href="#about" class="nav-link">Portfolio d'apprentissage</a></li>
+                <li class="nav-item"><a href="#parcours" class="nav-link">Parcours</a></li>
+                <li class="nav-item"><a href="#competences" class="nav-link">Compétences</a></li>
+                <li class="nav-item"><a href="#project" class="nav-link">Projets</a></li>
             </ul>
         </nav>
 
     </header>
 
     <main>
-
-        <div id="presentation" class="container col-xxl-8 px-4 py-5">
-            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div id="presentation" class="container vh-100 vw-100 d-flex align-items-center">
+            <div class="row flex-lg-row-reverse align-items-center w-100">
                 <div class="col-10 col-sm-8 col-lg-6">
-                    <img src="img/aurel.png" class=" mx-lg-auto img-fluid" alt="Bootstrap Themes" loading="lazy" style="border-radius: 50px">
+                    <img src="img/aurel.png" class="mx-lg-auto img-fluid" alt="aurel" loading="lazy">
                 </div>
                 <div class="col-lg-6 elem">
-                    <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Aurel GEORGES</h1>
-                    <p class="lead">Hello ! Je suis m’appelle Aurel, je suis étudiant en 2e année de BUT Informatique à l’IUT Montpellier-Sète. J’aime développer des applications utiles et amusantes, je suis attentif et inspiré par les nouvelles technologies. A l’aise avec le travail d’équipe j’accorde beaucoup d’importance à la communication entre coéquipier. </p>
+                    <h1 class="display-4 fw-bold text-body-emphasis lh-1 mb-3">Aurel GEORGES</h1>
+                    <p class="lead fs-4" style="text-align: justify">Hello ! Je suis Aurel, je suis étudiant en 2e année de BUT Informatique à l’IUT Montpellier-Sète. J’aime développer des applications utiles et amusantes, je suis attentif et inspiré par les nouvelles technologies. A l’aise avec le travail d’équipe j’accorde beaucoup d’importance à la communication entre coéquipier. </p>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-start">
                         <a type="button" class="btn btn-primary btn-lg px-4 me-md-2" href="doc/CV_GEORGES_Aurel.pdf" target="_blank">Mon CV</a>
                         <button type="button" class="btn btn-outline-secondary btn-lg px-4" data-bs-toggle="modal" data-bs-target="#modalTour">Contact</button>
@@ -92,10 +95,167 @@
 
         <div class="divider"></div>
 
-        <div class="container px-4 py-5" id="custom-cards">
+        <div>
+            <div class="container px-4 py-5" id="parcours">
+                <h2 class="pb-2 border-bottom">Mon parcours</h2>
+                <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+                    <div class="feature col">
+                        <div class="feature-icon d-inline-flex align-items-center justify-content-center mb-3 d-flex">
+                            <img src="img/parcours/dhuoda_logo.webp" alt="Logo Dhuoda">
+                            <h2 class="fs-2 text-body-emphasis ms-4 my-auto">2018 - 2021</h2>
+                        </div>
+                        <h3 class="fs-3">BAC Mention BIEN</h3>
+                        <p>Spécialitées Maths et Numériques et Science de l'Informatique ainsi que l'option Math Experte.</p>
+                        <a href="#" class="icon-link">
+                            Voir les projets
+                        </a>
+                    </div>
+                    <div class="feature col">
+                        <div class="feature-icon d-inline-flex align-items-center justify-content-center mb-3 d-flex">
+                            <img src="img/parcours/claude_fauriel_logo.webp" alt="Logo Dhuoda">
+                            <h2 class="fs-2 text-body-emphasis ms-4 my-auto">2021 - 2022</h2>
+                        </div>
+                        <h3 class="fs-3">Classe Préparatoire MP2I</h3>
+                        <p>J'ai fait la première année dans la nouvelle filière Maths Physique Ingégnieurie et Informatique en classe préparatoire.</p>
+                        <a href="#" class="icon-link">
+                            Voir les projets
+                        </a>
+                    </div>
+                    <div class="feature col">
+                        <div class="feature-icon d-inline-flex align-items-center justify-content-center mb-3 d-flex">
+                            <img src="img/parcours/iut_logo.webp" alt="Logo Dhuoda">
+                            <h2 class="fs-2 text-body-emphasis ms-4 my-auto">2022 - 2025</h2>
+                        </div>
+                        <h3 class="fs-3">BUT Informatique (en cours)</h3>
+                        <p>Parcours Intégration d'Application et Management du Système d'Information</p>
+                        <a href="#" class="icon-link">
+                            Voir les projets
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="container" id="competences">
+            <h2 class="pb-2 mt-5 border-bottom">Mes compétences</h2>
+            <div>
+                <h3 class="my-4 text-center">Programmation</h3>
+                <div class="row justify-content-around align-items-center my-3">
+                    <h4 class="col-lg-3 text-center my-auto">Java</h4>
+                    <div class="col-lg-9 my-auto">
+                        <div class="progress" role="progressbar" aria-label="Java Progress Bar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 65%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-around align-items-center my-3">
+                    <h4 class="col-lg-3 text-center my-auto">PHP</h4>
+                    <div class="col-lg-9 my-auto">
+                        <div class="progress" role="progressbar" aria-label="PHP Progress Bar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar bg-info" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-around align-items-center my-3">
+                    <h4 class="col-lg-3 text-center my-auto">Symfony</h4>
+                    <div class="col-lg-9 my-auto">
+                        <div class="progress" role="progressbar" aria-label="Java Progress Bar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 50%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-around align-items-center my-3">
+                    <h4 class="col-lg-3 text-center my-auto">HTML/CSS</h4>
+                    <div class="col-lg-9 my-auto">
+                        <div class="progress" role="progressbar" aria-label="HTML/CSS Progress Bar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar bg-info" style="width: 60%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-around align-items-center my-3">
+                    <h4 class="col-lg-3 text-center my-auto">Javascript</h4>
+                    <div class="col-lg-9 my-auto">
+                        <div class="progress" role="progressbar" aria-label="Javascript Progress Bar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 50%"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row justify-content-around align-items-center my-3">
+                    <h4 class="col-lg-3 text-center my-auto">Python</h4>
+                    <div class="col-lg-9 my-auto">
+                        <div class="progress" role="progressbar" aria-label="Python Progress Bar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar bg-info" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-around align-items-center my-3">
+                    <h4 class="col-lg-3 text-center my-auto">C</h4>
+                    <div class="col-lg-9 my-auto">
+                        <div class="progress" role="progressbar" aria-label="C Progress Bar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 40%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-around align-items-center my-3">
+                    <h4 class="col-lg-3 text-center my-auto">Bootstrap</h4>
+                    <div class="col-lg-9 my-auto">
+                        <div class="progress" role="progressbar" aria-label="Bootstrap Progress Bar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar bg-info" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-around align-items-center my-3">
+                    <h4 class="col-lg-3 text-center my-auto">Git</h4>
+                    <div class="col-lg-9 my-auto">
+                        <div class="progress" role="progressbar" aria-label="Git Progress Bar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 70%"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mb-5">
+                <h3 class="my-4 text-center">Langues</h3>
+                <div class="row justify-content-around align-items-center my-3">
+                    <h4 class="col-lg-3 text-center my-auto">Français (native)</h4>
+                    <div class="col-lg-9 my-auto">
+                        <div class="progress" role="progressbar" aria-label="French Progress Bar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar bg-success" style="width: 100%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-around align-items-center my-3">
+                    <h4 class="col-lg-3 text-center my-auto">Anglais (B1 CECRL)</h4>
+                    <div class="col-lg-9 my-auto">
+                        <div class="progress" role="progressbar" aria-label="English Progress Bar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar bg-success" style="width: 50%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-around align-items-center my-3">
+                    <h4 class="col-lg-3 text-center my-auto">Espagnol (A2 CECRL)</h4>
+                    <div class="col-lg-9 my-auto">
+                        <div class="progress" role="progressbar" aria-label="Spanish Progress Bar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar bg-success" style="width: 30%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="container px-4 py-5" id="project">
             <h2 class="pb-2 border-bottom">Mes Projets</h2>
 
-            <div id="project" class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
 
                 <div class="col">
                     <a href="project_shape2PCS.html">
@@ -226,9 +386,9 @@
 
 
 
-        <div class="divider"></div>
+        <div class="divider d-none"></div>
 
-        <div id="about" class="px-4 py-5 my-5 text-center">
+        <div id="about" class="px-4 py-5 my-5 text-center d-none">
             <h1 class="display-5 fw-bold text-body-emphasis">Portfolio d’apprentissage</h1>
             <div class="col-lg-6 mx-auto">
                 <p class="lead mb-4">Un moyen de faire le point sur mes compétences apprisent au BUT. Ce portfolio me permet de faire le lien avec le référentiel de compétences du BUT Informatique pour les 3 compétences qui s'arrêtent au niveau 2.</p>
@@ -241,9 +401,8 @@
                 </a>
             </div>
         </div>
-
-        <div class="divider"></div>
     </main>
+
     <div class="modal fade modal-sheet p-4 py-md-5" aria-labelledby="Modal Contact" tabindex="-1" role="dialog" id="modalTour" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content rounded-4 shadow">

@@ -14,11 +14,14 @@
             background-image: url("img/shape2PCS/background_blur.png");
             background-size: cover;
             background-position: center;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
         }
         .carousel-inner {
             border-radius: 20px;
             width: 1300px;
             height: 700px;
+            border: black 1px solid;
         }
 
     </style>
@@ -32,8 +35,9 @@
         </div>
         <ul class="nav nav-pills">
             <li class="nav-item"><a href="index.html#presentation" class="nav-link">Présentation</a></li>
+            <li class="nav-item"><a href="index.html#parcours" class="nav-link">Parcours</a></li>
+            <li class="nav-item"><a href="index.html#competences" class="nav-link">Compétences</a></li>
             <li class="nav-item"><a href="index.html#project" class="nav-link active">Projets</a></li>
-            <li class="nav-item"><a href="index.html#about" class="nav-link">Portfolio d'apprentissage</a></li>
         </ul>
     </nav>
 </header>
@@ -42,8 +46,8 @@
     <section id="main_presentation" class="py-5 text-center container">
         <div class="row py-lg-5">
             <div class="col-lg-6 col-md-8 mx-auto">
-                <h1 class="fw-light">Shape2PCS</h1>
-                <p class="lead text-body-secondary">Un convertisseur de fichiers géospatiaux réalisé durant mon stage chez <a href="https://www.poisson-soluble.com/" target="_blank">Poisson Soluble</a></p>
+                <h1 class="fw-light text-light">Shape2PCS</h1>
+                <p class="text-light lead">Un convertisseur de fichiers géospatiaux réalisé durant mon stage chez <a href="https://www.poisson-soluble.com/" target="_blank">Poisson Soluble</a></p>
                 <p>
                     <a href=#images class="btn btn-primary my-2" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Contactez moi pour tester et voir le code du logiciel">Voir des images</a>
                     <a href="doc/rapport_de_stage_final.pdf" target="_blank" class="btn btn-secondary my-2">Rapport de stage</a>
@@ -67,7 +71,7 @@
             </div>
             <div class="col-lg-4">
                 <img src="img/add.png" alt="add" style="width: 140px;  height: 140px;">
-                <h2 class="fw-normal">Deux mois</h2>
+                <h2 class="fw-normal">Professionel</h2>
                 <p>Ce projet a été developpé durant un stage de deux mois au sein de l'entreprise Poisson Soluble à Montpellier.</p>
             </div>
         </div>
@@ -81,11 +85,14 @@
                 <div>
                     <h3 class="fs-2">Contexte du projet</h3>
                     <p class="lead">
-                        La Code Game Jam est un événement annuel orchestré par le professeur Antoine Chollet, où des équipes
-                        de jusqu'à six personnes créent un jeu vidéo en seulement 30 heures, avec un thème imposé. Lors
-                        de ma deuxième participation (voir Weather Wizardry), mon équipe et moi avons relevé le défi de
-                        cette édition dont le thème était "Légende éthérée". Nous avons choisi de tester le moteur de
-                        jeu open source Godot pour cette occasion.
+                        Au cours de l'année, Poisson Soluble a été chargé d'intégrer des fichiers shapefile dans son
+                        application pour le compte de Predict, une entreprise qui aide les communes françaises à gérer
+                        leurs Plans Communaux de Sauvegarde (PCS). Les PCS sont des dispositifs obligatoires visant à
+                        planifier les mesures de protection et de gestion de crise en cas d'événements majeurs comme des
+                        inondations ou des incendies. Certaines communes disposent de leurs PCS sous forme de fichiers
+                        shapefile qu'elles transmettent à Predict, qui les envoie ensuite à Poisson Soluble pour intégration.
+                        Pour faciliter ce processus, Poisson Soluble a eu besoin de développer un convertisseur de fichiers
+                        shapefile en geoJSON.
                     </p>
                 </div>
             </div>
@@ -94,12 +101,14 @@
                 <div>
                     <h3 class="fs-2">Déroulement du projet :</h3>
                     <p class="lead">
-                        Nous nous sommes rapidement orientés vers un jeu répétitif basé sur des vagues d'ennemis,
-                        similaire à Vampire Survivor. Pour correspondre au thème, nous avons choisi de faire incarner au
-                        joueur un feu follet dans un environnement sombre, où sa vie est représentée par la lumière qu'il
-                        produit. J'ai pris en charge les interactions entre le joueurs et les arbres, la statue permettant les améliorations,
-                        les coffres, ainsi qu'une grande partie de la conception de la carte. De plus, j'ai effectué toutes
-                        les fusions finales pour obtenir le jeu terminé.
+                        Le projet de stage vise à concevoir une application web permettant de convertir des fichiers
+                        shapefile en fichiers geoJSON, deux formats couramment utilisés dans les systèmes d'information
+                        géographique (SIG). Les utilisateurs peuvent télécharger un fichier compressé contenant le shapefile,
+                        sélectionner les attributs à inclure dans le fichier geoJSON final, et lancer la conversion
+                        automatiquement. L'application offre la possibilité de renommer des attributs du shapefile selon
+                        des champs standards définis par Poisson Soluble, pour une utilisation optimale dans les applications
+                        web de Predict. Une fonctionnalité de prévisualisation permet de visualiser les points géographiques
+                        sur une carte avant la conversion, garantissant l'exactitude des données.
                     </p>
                 </div>
             </div>
@@ -119,35 +128,31 @@
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="img/wisp_madness/menu.png" class="d-block w-100" alt="...">
+                    <img src="img/shape2PCS/page_accueil.png" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="img/wisp_madness/loading.png" class="d-block w-100" alt="...">
+                    <img src="img/shape2PCS/choix_fichier.png" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="img/wisp_madness/spawn.png" class="d-block w-100" alt="...">
+                    <img src="img/shape2PCS/choix_SRID.png" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="img/wisp_madness/enemis.png" class="d-block w-100" alt="...">
+                    <img src="img/shape2PCS/previ.png" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="img/wisp_madness/upgrade.png" class="d-block w-100" alt="...">
+                    <img src="img/shape2PCS/attribut.png" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="img/wisp_madness/boss.png" class="d-block w-100" alt="...">
+                    <img src="img/shape2PCS/Diag_cas_usage.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="img/wisp_madness/death.png" class="d-block w-100" alt="...">
+                    <img src="img/shape2PCS/Diag_activité.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="img/wisp_madness/deathScreen.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/wisp_madness/map.png" class="d-block w-100" alt="...">
+                    <img src="img/shape2PCS/Diag_séquence.jpg" class="d-block w-100" alt="...">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
