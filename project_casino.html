@@ -14,6 +14,10 @@
             background-size: cover;
             background-position: center;
         }
+        .carousel-inner {
+            width: 1300px;
+            height: 700px;
+        }
     </style>
 
 </head>
@@ -70,49 +74,67 @@
             </div>
         </div>
 
-
-        <hr class="featurette-divider">
-        <div class="row featurette">
-            <div class="col-md-7">
-                <h2 class="featurette-heading fw-normal lh-1">Contexte du projet :</h2>
-                <p class="lead">
-                    Ce projet fait suite au developpement de <a href="project_machineAsous.html">notre machine à sous</a>.
-                    Toute la classe était initialement scindé en groupe pour développer des jeux de casino. Ce casino
-                    a pour but de les rassembler. Il a fallu aussi developer des modules complémentaires comme une interface
-                    administrateur, des paramètres et des statistiques propres à chaques jeux déjà existant. J'ai personnellement
-                    travaillé sur le module administrateur et la création entière du site web générale.
-                </p>
-            </div>
-            <div class="col-md-5">
-                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="img/casino/casino_frontpage_admin.png" alt="">
-            </div>
-        </div>
-
         <hr class="featurette-divider">
 
-        <div class="row featurette">
-            <div class="col-md-7 order-md-2">
-                <h2 class="featurette-heading fw-normal lh-1">Déroulement du <span class="text-body-secondary">projet</span></h2>
-                <p class="lead">
-                    J'ai principalement travaillé sur le backend du projet, en commençant par les fonctionnalités qui n'étaient
-                    comprises dans les modules. C'est-à-dire, l'affichage des jeux à partir de la base de donnée, la création
-                    de formulaire pour s'inscrire et se connecter et enfin, avec un camarade, nous avons adapté un template.
-                    Ensuite, avec mon équipe nous avons travaillé sur le module administrateur. Les objectifs étaient de
-                    permettre aux administrateurs d'ajouter, de supprimer et de modifier les jeux et les utilisateurs. Il fallait
-                    également pouvoir bloquer des utilisateurs et cacher des jeux. J'ai tout implémenté et tout fonctionne
-                    correctement. Enfin j'ai dirigé la réunification des modules sur une même branche git.
-                    Si vous me contactez je peux vous donner les accès pour tester le site en tant qu'administrateur.
-                </p>
-            </div>
-            <div class="col-md-5 order-md-1">
-                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="img/casino/casino_user_admin.png" alt="">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 align-items-center justify-content-center">
+                    <div>
+                        <h3 class="fs-2">Contexte du projet</h3>
+                        <p class="lead">
+                            Ce projet fait suite au developpement de <a href="project_machineAsous.html">notre machine à sous</a>.
+                            Toute la classe était initialement scindé en groupe pour développer des jeux de casino. Ce casino
+                            a pour but de les rassembler. Il a fallu aussi developer des modules complémentaires comme une interface
+                            administrateur, des paramètres et des statistiques propres à chaques jeux déjà existant. J'ai personnellement
+                            travaillé sur le module administrateur et la création entière du site web générale.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-6 align-items-center justify-content-center">
+                    <div>
+                        <h3 class="fs-2">Déroulement du projet :</h3>
+                    <p class="lead">
+                        J'ai principalement travaillé sur le backend du projet, en commençant par les fonctionnalités qui n'étaient
+                        comprises dans les modules. C'est-à-dire, l'affichage des jeux à partir de la base de donnée, la création
+                        de formulaire pour s'inscrire et se connecter et enfin, avec un camarade, nous avons adapté un template.
+                        Ensuite, avec mon équipe nous avons travaillé sur le module administrateur. Les objectifs étaient de
+                        permettre aux administrateurs d'ajouter, de supprimer et de modifier les jeux et les utilisateurs. Il fallait
+                        également pouvoir bloquer des utilisateurs et cacher des jeux. J'ai tout implémenté et tout fonctionne
+                        correctement. Enfin j'ai dirigé la réunification des modules sur une même branche git.
+                        Si vous me contactez je peux vous donner les accès pour tester le site en tant qu'administrateur.
+                    </p>
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
 
-    </div><!-- /.container -->
+    <div class="container" id="images">
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner rounded-4 border border-black">
+                <div class="carousel-item active">
+                    <img src="img/casino/casino_frontpage_admin.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item active">
+                    <img src="img/casino/casino_user_admin.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="false"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
 
-
-    <!-- FOOTER -->
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
         <div class="col-md-4 d-flex align-items-center">
             <span class="mb-3 mb-md-0 text-body-secondary px-4">© 2024 GEORGES Aurel</span>
