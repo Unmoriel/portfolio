@@ -40,8 +40,8 @@
     <section id="main_presentation" class="py-5 text-center container">
         <div class="row py-lg-5">
             <div class="col-lg-6 col-md-8 mx-auto">
-                <h1 class="fw-light">Bot Discord : LoLcam</h1>
-                <p class="lead text-body-secondary">Un bot discord qui se connecte à l'API de Riot Games pour envoyer des résumés des dernières parties des joueurs inscrit sur le serveur.</p>
+                <h1 class="fw-light text-light">Bot Discord : LoLcam</h1>
+                <p class="lead text-light">Un bot discord qui se connecte à l'API de Riot Games pour envoyer des résumés des dernières parties des joueurs inscrit sur le serveur.</p>
                 <p>
                     <a href="https://github.com/Unmoriel/SpyGame-Discord-bot" class="btn btn-primary my-2" target="_blank">Voir le Github</a>
                 </p>
@@ -72,43 +72,69 @@
 
 
         <hr class="featurette-divider">
-        <div class="row featurette align-items-center justify-content-center">
-            <div class="col-md-7">
-                <h2 class="featurette-heading fw-normal lh-1">Pourquoi ce projet ?</h2>
-                <p class="lead">
-                    J'ai commencé ce projet pour travailler sur communication entre différentes API.
-                    Ce bot a beaucoup amusé mes amis et j'ai donc continué à le développer. <br>
-                    J'ai commencé à faire une première version qui stockait toutes les données dans des fichiers JSON,
-                    le code était sur un seul fichier et le bot pouvais gérer qu'un seul serveur discord.
-                    J'ai pus experimenter les limites d'un projet mal géré et c'est pour cela que j'ai décidé de développer
-                    une deuxième version du bot pouvant qui respecte les bases SOLID et DRY tout en stockant
-                    les données sur une base de donnée MariaDB.</p>
-            </div>
-            <div class="col-md-5">
-                <img alt="image exemple" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="img/lolcam/win_exemple.png">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 align-items-center justify-content-center">
+                    <div>
+                        <h3 class="fs-2">Contexte du projet</h3>
+                            <p class="lead">
+                                J'ai commencé ce projet pour travailler sur communication entre différentes API.
+                                Ce bot a beaucoup amusé mes amis et j'ai donc continué à le développer. <br>
+                                J'ai commencé à faire une première version qui stockait toutes les données dans des fichiers JSON,
+                                le code était sur un seul fichier et le bot pouvais gérer qu'un seul serveur discord.
+                                J'ai pus experimenter les limites d'un projet mal géré et c'est pour cela que j'ai décidé de développer
+                                une deuxième version du bot pouvant qui respecte les bases SOLID et DRY tout en stockant
+                                les données sur une base de donnée MariaDB.
+                            </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 align-items-center justify-content-center">
+                    <div>
+                        <h3 class="fs-2">Déroulement du projet :</h3>
+                        <p class="lead">
+                            Ce projet a été réalisé en parallèle de mes études. J'ai donc commencé par réalisé une première version assez basique mais
+                            fonctionnelle pour un serveur discord. Cette version a posé les bases avec les appels à l'API de Riot Games, la création
+                            de l'image avec tous les personnages de la partie, son stockage sur cloudinary et les "embed" (messages stylisés de discord).
+                            J'ai ensuite développé une deuxième version du bot, avec une base de donnée MariaDB pour stocker les données des joueurs et
+                            des serveurs. J'ai aussi ajouté la possibilité de gérer plusieurs serveurs discord et j'ai découpé les parties du code.
+                            Aujourd'hui le bot est désactivé le temps que je reprenne le développement.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
 
-        <hr class="featurette-divider">
+    <div class="container">
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
 
-        <div class="row featurette align-items-center justify-content-center">
-            <div class="col-md-7 order-md-2">
-                <h2 class="featurette-heading fw-normal lh-1 mb-3">Déroulement du <span class="text-body-secondary">projet :</span></h2>
-                <p class="lead">
-                    Ce projet a été réalisé en parallèle de mes études. J'ai donc commencé par réalisé une première version assez basique mais
-                    fonctionnelle pour un serveur discord. Cette version a posé les bases avec les appels à l'API de Riot Games, la création
-                    de l'image avec tous les personnages de la partie, son stockage sur cloudinary et les "embed" (messages stylisés de discord).
-                    J'ai ensuite développé une deuxième version du bot, avec une base de donnée MariaDB pour stocker les données des joueurs et
-                    des serveurs. J'ai aussi ajouté la possibilité de gérer plusieurs serveurs discord et j'ai découpé les parties du code.
-                    Aujourd'hui le bot est désactivé le temps que je reprenne le développement.
-                </p>
             </div>
-            <div class="col-md-5 order-md-1">
-                <img alt="image exemple" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="img/lolcam/recap_lolcam.png">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/lolcam/win_exemple.png" class="d-block w-100" alt="..." title="Cliquez à droite ou a gauche de l'image pour faire défiler">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/lolcam/aram_win.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/lolcam/recap_lolcam.png" class="d-block w-100" alt="...">
+                </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-
-    </div><!-- /.container -->
+    </div>
 
 
     <!-- FOOTER -->
