@@ -11,7 +11,7 @@ export const DATA = {
     description:
         "Alternant en 3eme année de BUT informatique à l'IUT Montpellier et developpeur chez Poisson Soluble.",
     summary:
-        "Hello ! J’aime développer des applications utiles et amusantes, je suis attentif et inspiré par les nouvelles technologies. A l’aise avec le travail d’équipe j’accorde beaucoup d’importance à la communication entre coéquipier.",
+    "Hello, passionné par le développement d'applications utiles et innovantes, j'aime explorer les nouvelles technologies qui inspirent et transforment notre quotidien. Attentif et investi, je privilégie le travail d’équipe et accorde une importance capitale à la communication pour favoriser la collaboration et la réussite collective. Mon objectif à long terme est de devenir Lead Developer, un rôle qui me permettrait de combiner ma passion pour la technique avec le leadership et la gestion d'équipe. Pour y parvenir, je souhaite intégrer une école d'ingénieur, où je pourrais approfondir mes compétences techniques et développer les qualités nécessaires pour exceller dans ce rôle.",
     avatarUrl: "/aurel.png",
     skills: [
         "Java 17",
@@ -52,7 +52,6 @@ export const DATA = {
                 name: "Send Email",
                 url: "mailto:aurelgeorges@hotmail.fr",
                 icon: Icons.email,
-
                 navbar: true,
             },
         },

@@ -3,6 +3,7 @@
 import BlurFade from "@/components/magicui/blur-fade";
 import {wispmadnessData} from "@/data/wispmadness";
 import { Carousel } from "@/components/carousel";
+import {Icons} from "@/components/icons";
 
 const BLUR_FADE_DELAY = 0.1;
 
@@ -39,6 +40,13 @@ export default function WispMadnessPage({}) {
                 <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
                     <div className="lg:pr-4">
                         <div className="lg:max-w-lg">
+                            <BlurFade delay={BLUR_FADE_DELAY * 0.5}>
+                                <h2 className="text-base/7 font-semibold text-indigo-600">
+                                    <a href="/#projects" className="inline-flex items-center">
+                                        {Icons.backArrow({})} Revenir aux projets
+                                    </a>
+                                </h2>
+                            </BlurFade>
                             <BlurFade delay={BLUR_FADE_DELAY}>
                                 <h1 className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 dark:text-white sm:text-5xl">
                                     {project.title}
@@ -48,6 +56,30 @@ export default function WispMadnessPage({}) {
                                 <p className="mt-6 text-xl/8 text-gray-700 dark:text-gray-300 text-justify">
                                     {project.dates}
                                 </p>
+                                <div className="flex space-x-4 mt-4">
+                                    <a
+                                        href={project.liveURL ?? ""}
+                                        className={`px-4 py-2 text-sm font-medium text-white bg-indigo-600 rounded-lg hover:bg-indigo-700 ${
+                                            project.liveURL ? '' : 'cursor-not-allowed opacity-50 pointer-events-none'
+                                        }`}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        aria-disabled={!project.liveURL}
+                                    >
+                                        Voir le projet
+                                    </a>
+                                    <a
+                                        href={project.sourceURL ?? ""}
+                                        className={`px-4 py-2 text-sm font-medium text-indigo-600 bg-gray-200 rounded-lg hover:bg-gray-300 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-indigo-400 ${
+                                            project.sourceURL ? '' : 'cursor-not-allowed opacity-50 pointer-events-none'
+                                        }`}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        aria-disabled={!project.sourceURL}
+                                    >
+                                        Code source
+                                    </a>
+                                </div>
                             </BlurFade>
                             <BlurFade delay={BLUR_FADE_DELAY * 3}>
                                 <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Contexte du projet</h2>
