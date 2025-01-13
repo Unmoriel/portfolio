@@ -7,6 +7,7 @@ export const DATA = {
     url: "http://localhost:3000/",
     location: "Montpellier, France",
     locationLink: "https://www.google.com/maps/place/montpellier",
+    cvUrl: "/CV/CV.pdf",
     description:
         "Alternant en 3eme année de BUT informatique à l'IUT Montpellier et developpeur chez Poisson Soluble.",
     summary:
@@ -27,6 +28,12 @@ export const DATA = {
         email: "aurelgeorges@hotmail.fr",
         tel: "0652584523",
         social: {
+            CV: {
+                name: "CV",
+                url: "/CV/CV.pdf",
+                icon: Icons.cv,
+                navbar: true,
+            },
             GitHub: {
                 name: "GitHub",
                 url: "https://github.com/Unmoriel",
@@ -144,9 +151,8 @@ export const DATA = {
                 "API"
             ],
             links: [],
-            image: "",
-            video:
-                "https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
+            image: "/project/discordBot/img/gameWon.png",
+            video: "",
         },
     ],
     school:[
