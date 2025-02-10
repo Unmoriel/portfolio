@@ -57,10 +57,15 @@ export default function Shape2PCS({}) {
                                 <p className="mt-6 text-xl/8 text-gray-700 dark:text-gray-300 text-justify">
                                     {project.dates}
                                 </p>
+                                <div
+                                    className="mt-2 px-3 py-2 max-w-md text-sm text-gray-600 dark:text-gray-400 bg-gray-100 dark:bg-gray-900 rounded-md shadow-sm border border-gray-300 dark:border-gray-700">
+                                    Poisson Soluble ne souhaite pas partager le code et l'outil. Me contacter pour plus
+                                    d'information.
+                                </div>
                                 <div className="flex space-x-4 mt-4">
                                     <a
                                         href={project.liveURL ?? ""}
-                                        className={`px-4 py-2 text-sm font-medium text-white bg-indigo-600 rounded-lg hover:bg-indigo-700 ${
+                                        className={`px-4 py-2 text-sm font-medium text-white bg-indigo-600 rounded-lg hover:bg-indigo-700 transition ${
                                             project.liveURL ? '' : 'cursor-not-allowed opacity-50 pointer-events-none'
                                         }`}
                                         target="_blank"
@@ -71,7 +76,7 @@ export default function Shape2PCS({}) {
                                     </a>
                                     <a
                                         href={project.sourceURL ?? ""}
-                                        className={`px-4 py-2 text-sm font-medium text-indigo-600 bg-gray-200 rounded-lg hover:bg-gray-300 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-indigo-400 ${
+                                        className={`px-4 py-2 text-sm font-medium text-indigo-600 bg-gray-200 rounded-lg hover:bg-gray-300 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-indigo-400 transition ${
                                             project.sourceURL ? '' : 'cursor-not-allowed opacity-50 pointer-events-none'
                                         }`}
                                         target="_blank"
@@ -81,6 +86,7 @@ export default function Shape2PCS({}) {
                                         Code source
                                     </a>
                                 </div>
+
 
                             </BlurFade>
                             <BlurFade delay={BLUR_FADE_DELAY * 3}>
@@ -101,14 +107,12 @@ export default function Shape2PCS({}) {
                     className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
                     {images.length > 0 && (
                         <BlurFade delay={BLUR_FADE_DELAY * 5}>
-                            <Carousel items={images}
-                                      className="rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10"/>
+                            <Carousel items={images} className="rounded-xl shadow-xl ring-1 ring-gray-400/10" />
                         </BlurFade>
                     )}
                     {videos.length > 0 && (
                         <BlurFade delay={BLUR_FADE_DELAY * 6}>
-                            <Carousel items={videos}
-                                      className="mt-6 rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10"/>
+                            <Carousel items={videos} className="mt-6 rounded-xl shadow-xl ring-1 ring-gray-400/10" />
                         </BlurFade>
                     )}
                 </div>
