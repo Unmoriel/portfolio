@@ -18,7 +18,6 @@ export const eventPlannerData = {
         { type: "image", src: "/project/eventPlanner/img/conferenceDetailFront.png", alt: "Screenshot" },
         { type: "image", src: "/project/eventPlanner/img/inscriptionConferenceFront.png", alt: "Screenshot" },
         { type: "image", src: "/project/eventPlanner/img/profilConferenceFront.png", alt: "Screenshot" },
-
         { type: "video", src: "/project/eventPlanner/video/conferenceFront.mp4", alt: "video" },
         { type: "video", src: "/project/eventPlanner/video/annuaireFeatures_original.mp4", alt: "video" },
 
