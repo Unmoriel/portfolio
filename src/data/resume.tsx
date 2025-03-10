@@ -1,5 +1,5 @@
 import { Icons } from "@/components/icons";
-import { HomeIcon, NotebookIcon } from "lucide-react";
+import { HomeIcon, BriefcaseBusiness } from "lucide-react";
 
 export const DATA = {
     name: "Aurel GEORGES",
@@ -23,6 +23,7 @@ export const DATA = {
     ],
     navbar: [
         { href: "/", icon: HomeIcon, label: "Home" },
+        { href: "/apprentissage", icon: BriefcaseBusiness, label: "Portfolio d'apprentissage" },
     ],
     contact: {
         email: "aurelgeorges@hotmail.fr",
@@ -38,7 +39,6 @@ export const DATA = {
                 name: "GitHub",
                 url: "https://github.com/Unmoriel",
                 icon: Icons.github,
-
                 navbar: true,
             },
             LinkedIn: {
