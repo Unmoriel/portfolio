@@ -4,9 +4,10 @@ import { useState } from "react";
 
 export default function PortfolioApprentissage() {
     const [activeTab, setActiveTab] = useState("realiser");
+    const [activeProof, setActiveProof] = useState("Images");
 
     const tabs = [
-        { id: "realiser", label: "Réaliser", project: "/projet-1", image: "/path/to/image1.jpg", video: "/path/to/video1.mp4", description: "Description détaillée de la compétence et des apprentissages critiques associés." },
+        { id: "realiser", label: "Réaliser", project: "/projet-1", image: "/path/to/image1.jpg", video: "/path/to/video1.mp4", description: "Description détaillée de la compétence et des apprentissages critiques associés.Description détaillée de la compétence et des apprentissages critiques associés.Description détaillée de la compétence et des apprentissages critiques associés.Description détaillée de la compétence et des apprentissages critiques associés.Description détaillée de la compétence et des apprentissages critiques associés.Description détaillée de la compétence et des apprentissages critiques associés.Description détaillée de la compétence et des apprentissages critiques associés.Description détaillée de la compétence et des apprentissages critiques associés.Description détaillée de la compétence et des apprentissages critiques associés.Description détaillée de la compétence et des apprentissages critiques associés.Description détaillée de la compétence et des apprentissages critiques associés.Description détaillée de la compétence et des apprentissages critiques associés.Description détaillée de la compétence et des apprentissages critiques associés.Description détaillée de la compétence et des apprentissages critiques associés.Description détaillée de la compétence et des apprentissages critiques associés.Description détaillée de la compétence et des apprentissages critiques associés.Description détaillée de la compétence et des apprentissages critiques associés.Description détaillée de la compétence et des apprentissages critiques associés.Description détaillée de la compétence et des apprentissages critiques associés.Description détaillée de la compétence et des apprentissages critiques associés.Description détaillée de la compétence et des apprentissages critiques associés.Description détaillée de la compétence et des apprentissages critiques associés.Description détaillée de la compétence et des apprentissages critiques associés.Description détaillée de la compétence et des apprentissages critiques associés.Description détaillée de la compétence et des apprentissages critiques associés.Description détaillée de la compétence et des apprentissages critiques associés.Description détaillée de la compétence et des apprentissages critiques associés.Description détaillée de la compétence et des apprentissages critiques associés.Description détaillée de la compétence et des apprentissages critiques associés.Description détaillée de la compétence et des apprentissages critiques associés.Description détaillée de la compétence et des apprentissages critiques associés.Description détaillée de la compétence et des apprentissages critiques associés.Description détaillée de la compétence et des apprentissages critiques associés.Description détaillée de la compétence et des apprentissages critiques associés.Description détaillée de la compétence et des apprentissages critiques associés.Description détaillée de la compétence et des apprentissages critiques associés.Description détaillée de la compétence et des apprentissages critiques associés.Description détaillée de la compétence et des apprentissages critiques associés.Description détaillée de la compétence et des apprentissages critiques associés.Description détaillée de la compétence et des apprentissages critiques associés.Description détaillée de la compétence et des apprentissages critiques associés.Description détaillée de la compétence et des apprentissages critiques associés.Description détaillée de la compétence et des apprentissages critiques associés.Description détaillée de la compétence et des apprentissages critiques associés.Description détaillée de la compétence et des apprentissages critiques associés.Description détaillée de la compétence et des apprentissages critiques associés.Description détaillée de la compétence et des apprentissages critiques associés.Description détaillée de la compétence et des apprentissages critiques associés.Description détaillée de la compétence et des apprentissages critiques associés.Description détaillée de la compétence et des apprentissages critiques associés.Description détaillée de la compétence et des apprentissages critiques associés.Description détaillée de la compétence et des apprentissages critiques associés.Description détaillée de la compétence et des apprentissages critiques associés.Description détaillée de la compétence et des apprentissages critiques associés.Description détaillée de la compétence et des apprentissages critiques associés.Description détaillée de la compétence et des apprentissages critiques associés.Description détaillée de la compétence et des apprentissages critiques associés.Description détaillée de la compétence et des apprentissages critiques associés.Description détaillée de la compétence et des apprentissages critiques associés.Description détaillée de la compétence et des apprentissages critiques associés.Description détaillée de la compétence et des apprentissages critiques associés.Description détaillée de la compétence et des apprentissages critiques associés.Description détaillée de la compétence et des apprentissages critiques associés.Description détaillée de la compétence et des apprentissages critiques associés." },
         { id: "conduire", label: "Conduire", project: "/projet-2", image: "/path/to/image2.jpg", video: "/path/to/video2.mp4", description: "Explication des éléments de validation et des méthodes utilisées pour y parvenir." },
         { id: "collaborer", label: "Collaborer", project: "/projet-3", image: "/path/to/image3.jpg", video: "/path/to/video3.mp4", description: "Justification des éléments validés avec des traces concrètes." },
     ];
@@ -59,13 +60,39 @@ export default function PortfolioApprentissage() {
                 {tabs.map((tab) =>
                     activeTab === tab.id ? (
                         <div key={tab.id} className="bg-gray-100 dark:bg-gray-800 p-8 rounded-lg shadow-md">
-                            <h2 className="text-4xl font-bold text-gray-900 dark:text-white">{tab.label}</h2>
                             <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">{tab.description}</p>
-                            <div className="mt-6 space-y-4">
-                                <a href={tab.project} className="text-blue-600 dark:text-blue-400 hover:underline">
-                                    Lien vers un projet associé
-                                </a>
+
+                            <div className="mt-4">
+                                <h3 className="text-3xl">
+                                    Preuves :
+                                </h3>
                             </div>
+                            <div className="md:flex my-3 border-r-2">
+                                <ul className="flex-column space-y space-y-4 text-sm font-medium text-gray-500 dark:text-gray-400 md:me-4 mb-4 md:mb-0">
+                                    <li>
+                                        <button
+                                           className={"inline-flex items-center px-4 py-3 text-white bg-blue-700 rounded-lg active w-full dark:bg-blue-600"}
+                                           >
+                                            Images
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button
+                                           className="inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 bg-gray-50 hover:bg-gray-100 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
+                                            Projets
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button
+                                           className="inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 bg-gray-50 hover:bg-gray-100 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
+                                            Documents
+                                        </button>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+
                         </div>
                     ) : null
                 )}
